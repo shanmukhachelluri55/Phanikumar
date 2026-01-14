@@ -1,0 +1,42 @@
+================================================
+PORTFOLIO ASSETS GUIDE
+================================================
+
+Place your portfolio assets in this 'public' folder:
+
+1. RESUME PDF
+   - Place your resume as: resume.pdf
+   - The resume viewer and download button will automatically use this file
+
+2. PROFILE PICTURE (Optional)
+   - If you want to use a local image instead of a URL
+   - Place it as: profile.jpg (or .png)
+   - Then update Hero.tsx to reference: /profile.jpg
+
+3. PROJECT VIDEOS
+   - Place all project videos in: public/projects/
+   - Example: public/projects/tiny-library.mp4
+   - Supported format: MP4 (recommended)
+   - Keep videos under 50MB for best performance
+
+4. PROJECT THUMBNAILS
+   - Place thumbnail images in: public/projects/
+   - Example: public/projects/tiny-library-thumbnail.jpg
+   - Recommended size: 1280x720px
+   - Supported formats: JPG, PNG, WebP
+
+CURRENT STRUCTURE:
+public/
+├── resume.pdf                           (Place your resume here)
+├── profile.jpg                          (Optional: your profile photo)
+├── projects/
+│   ├── tiny-library.mp4                (Your project videos)
+│   ├── tiny-library-thumbnail.jpg      (Project thumbnails)
+│   ├── heritage-documentation.mp4
+│   └── heritage-documentation-thumbnail.jpg
+
+After adding your files, update the URLs in the respective component files:
+- Profile image: src/components/Hero.tsx
+- Project videos/thumbnails: src/components/Projects.tsx
+
+================================================
